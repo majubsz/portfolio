@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@font-face{ 
+    font-family: "Poppins";
+    src: url(fonts/Poppins);
+}
+
+@font-face{ 
+    font-family: "Khuja";
+    src: url(fonts/Khuja.otf);
+}
+
+:root {
+    --verdeescuro: #232A1F;
+    --verdeclaro: #4A5C43;
+    --marrom: #483829;
+    --amarelo: #AA6114;
+    --creme: #DFDAC8;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container-grid {
+    width: 80vw;
+    max-width: 1400px;
+
+    /* margin: 20px - Espaçamento externo de 20px */
+    /* margin: 20px 10px - Espaçamento 20px na vertical, 10px na horizontal */
+    /* margin: 20px 10px 5px - Espaçamento 20px para cima, 10px na horizontal, 5px para baixo */
+    /* margin: 20px 10px 5px 2px - Espaçamento 20px para cima, 10px para a direita, 5px para baixo, 2px para a esquerda */
+
+    margin: 0 auto;
+}
+
+
+header {
+    height: 160px;
+    
+}
+
+.menu {
+    width: 100%;
+    background-color: var(--creme);
+    height: 80px;
+    display: flex;
+    align-items: center;
+    z-index: 10;
+}
+
+.menu img {
+    width: 100px;
+    height: 100px;
+}
+
+.menu a {
+    list-style-type: none;
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+
+    font-family: "Poppins";
+    font-size: 20px;
+    width: 100%;
+    padding-left: 0px;
+}
+
+.menu a {
+    color: var(--verdeescuro);
+   
+}
+
+.banner{
+    background-color: var(--creme);
+}
+
+.conteudo-banner{
+    height: calc(85vh - 280px);
+}
+
+.conteudo-banner h1, h2 {
+    font-family: "Khuja";
+    font-size: 64px;
+    text-align: center;
+}
+
+.conteudo-banner h1 {
+    font-family: "Khuja";
+    color: var(--verdeescuro);
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: var(--verdeescuro);
+}
