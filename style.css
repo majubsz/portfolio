@@ -83,13 +83,16 @@ header {
 
 .conteudo-banner h1, h2 {
     font-family: "Khuja";
-    font-size: 64px;
+    font-size: 120px;
     text-align: center;
 }
 
 .conteudo-banner h1 {
-    font-family: "Khuja";
-    color: var(--verdeescuro);
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: var(--verdeescuro);
+    font-weight: bold;
+    color: transparent; /* Deixa o texto vazio */
+    -webkit-text-stroke: 2px var(--verdeclaro); /* Define o contorno */
+}
+
+.conteudo-banner h2{
+    color: #4A5C43;
 }
